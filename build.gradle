@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.company'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.34.0'
+    implementation 'org.jetbrains:annotations:20.1.0'
+}
